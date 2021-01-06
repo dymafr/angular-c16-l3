@@ -14,6 +14,7 @@ import { RouterModule } from "@angular/router";
 import { APP_ROUTES } from "./app.routes";
 import { PanierService } from "./shared/services/panier.service";
 import { CocktailFormComponent } from "./cocktail-container/cocktail-form/cocktail-form.component";
+import { FilterPipe } from "./shared/pipes/filter.pipe";
 
 @NgModule({
   imports: [
@@ -31,7 +32,8 @@ import { CocktailFormComponent } from "./cocktail-container/cocktail-form/cockta
     SelectedDirective,
     PanierContainerComponent,
     IngredientListComponent,
-    CocktailFormComponent
+    CocktailFormComponent,
+    FilterPipe
   ],
   bootstrap: [AppComponent],
   providers: [PanierService]
